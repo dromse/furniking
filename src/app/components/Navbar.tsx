@@ -1,7 +1,7 @@
 import BellIcon from "../icons/BellIcon";
 import CartIcon from "../icons/CartIcon";
+import LogoIcon from "../icons/LogoIcon";
 import ProfileIcon from "../icons/ProfileIcon";
-import Logo from "./Logo";
 import Search from "./Search";
 
 const langs = [{ title: "English (USD)", mark: "en" }];
@@ -37,7 +37,7 @@ function Navbar() {
       </div>
 
       <div className="max-container py-6 flex items-center justify-between">
-        <Logo></Logo>
+        <LogoIcon></LogoIcon>
         <Search></Search>
 
         <div className="flex gap-5">
