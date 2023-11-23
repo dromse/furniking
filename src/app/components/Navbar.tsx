@@ -20,7 +20,12 @@ function Navbar() {
               className="bg-inherit cursor-pointer"
             >
               {langs.map((lang) => (
-                <option value={lang.mark}>{lang.title}</option>
+                <option
+                  key={lang.mark}
+                  value={lang.mark}
+                >
+                  {lang.title}
+                </option>
               ))}
             </select>
 
