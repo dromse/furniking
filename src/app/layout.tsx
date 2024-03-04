@@ -18,12 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>
-        <div className="flex flex-col h-screen justify-between">
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
+      <body
+        className={`flex flex-col h-screen justify-between ${rubik.className}`}
+      >
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

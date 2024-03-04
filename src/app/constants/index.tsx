@@ -1,7 +1,15 @@
-import FacebookIcon from "../icons/social/FacebookIcon";
-import InstagramIcon from "../icons/social/InstagramIcon";
-import PinterestIcon from "../icons/social/PinterestIcon";
-import TwitterIcon from "../icons/social/TwitterIcon";
+import {
+  FreeShipping,
+  QuickPayment,
+  SmartGiftCard,
+  Support,
+} from "../icons/benefits";
+import { Facebook, Instagram, Pinterest, Twitter } from "../icons/social";
+
+export const langs = [
+  { title: "English (USD)", mark: "en" },
+  { title: "Українська (ГРН)", mark: "ua" },
+];
 
 export const footer_links = [
   {
@@ -34,14 +42,49 @@ export const footer_links = [
 ];
 
 export const social_links = [
-  { icon: FacebookIcon, href: "https://www.facebook.com" },
-  { icon: TwitterIcon, href: "https://www.twitter.com" },
-  { icon: InstagramIcon, href: "https://www.instagram.com" },
-  { icon: PinterestIcon, href: "https://www.pinterest.com" },
+  { icon: Facebook, href: "https://www.facebook.com" },
+  { icon: Twitter, href: "https://www.twitter.com" },
+  { icon: Instagram, href: "https://www.instagram.com" },
+  { icon: Pinterest, href: "https://www.pinterest.com" },
 ];
 
 export const copyright_links = [
   { title: "Privacy", href: "/privacy" },
   { title: "Security", href: "/security" },
   { title: "Terms", href: "/terms" },
+];
+
+export type Benefit = {
+  icon: React.JSX.ElementType;
+  title: string;
+  desc: string;
+};
+
+export const benefits: Benefit[] = [
+  { title: "Free Shipping", desc: "Orders over $100", icon: FreeShipping },
+  {
+    title: "Smart Gift Card",
+    desc: "Buy $1000 to get card",
+    icon: SmartGiftCard,
+  },
+  { title: "Quick Payment", desc: "100% secure payment", icon: QuickPayment },
+  { title: "24/7 Support", desc: "Quick support", icon: Support },
+];
+
+export type Tab = {
+  id: number;
+  title: string;
+};
+
+export const trending_tabs: Tab[] = [
+  { id: 0, title: "Top Products" },
+  { id: 1, title: "New Arrivals" },
+  { id: 2, title: "Best Sellers" },
+];
+
+export const products_tabs: Tab[] = [
+  { id: 0, title: "All Products" },
+  { id: 1, title: "Best Sellers" },
+  { id: 2, title: "New Arrivals" },
+  { id: 3, title: "Today's Deals" },
 ];
