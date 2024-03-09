@@ -1,6 +1,5 @@
-import { Mulish } from "next/font/google";
+import { mulish } from "../fonts";
 
-const mulish = Mulish({ subsets: ["latin"] });
 type Props = { children: string };
 
 export default function Title({ children }: Props) {

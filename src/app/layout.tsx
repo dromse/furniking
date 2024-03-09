@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import { rubik } from "./fonts";
 import "./globals.css";
-
-const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Furniking",
