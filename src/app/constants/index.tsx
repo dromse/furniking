@@ -88,3 +88,31 @@ export const products_tabs: Tab[] = [
   { id: 2, title: "New Arrivals" },
   { id: 3, title: "Today's Deals" },
 ];
+
+export type Testimonial = {
+  id: number;
+  imgUrl: string;
+  comment: string;
+  name: string;
+  role: string;
+};
+
+
+export const customersays: Testimonial[] = [
+  {
+    id: 0,
+    imgUrl: "/customersays/0.png",
+    comment:
+      "Furniking.com has truly set a new standard in customer service excellence. Compared to other companies, their policies and customer support are unparalleled. I've never experienced such ease in reaching out for assistance. It's refreshing to encounter a company that genuinely prioritizes its customers' satisfaction.",
+    name: "Angelina Joly",
+    role: "Co-founder",
+  },
+  {
+    id: 1,
+    imgUrl: "/customersays/1.png",
+    comment:
+      "I can't recommend Furniking.com enough! Their commitment to their customers shines through in every interaction. Unlike other companies, their policies are fair and transparent, and their customer support is not only top-notch but also incredibly easy to access. If you're looking for a hassle-free shopping experience with exceptional service, Furniking.com is the way to go.",
+    name: "Mattias Larson",
+    role: "CEO",
+  },
+];
